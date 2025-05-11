@@ -49,7 +49,7 @@
 
 ---
 ## Sơ đồ nối chân với Raspberry Pi 5
-- VCC	    Pin 1 hoặc 17
+- VCC     Pin 1 hoặc 17
 - GND	    Pin 6, 9, 14, 20, 25, 30, 34, 39
 - SDA	    GPIO2 / SDA1 (Pin 3)
 - SCL	    GPIO3 / SCL1 (Pin 5)
