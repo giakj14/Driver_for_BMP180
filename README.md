@@ -1,16 +1,16 @@
-# Project Driver TCS34725
+# Viết driver cho cảm biến áp suất BMP180 trên hệ điều hành Linux
 ## Thành viên nhóm
-- **Quách Tuấn Thành** – MSSV: `22146`  
-- **Trần Linh** – MSSV: `22146`  
+- **Quách Tuấn Thành** – MSSV: `22146223`  
+- **Trần Linh** – MSSV: `22146343`  
 - **Huỳnh Võ Gia Kỳ** – MSSV: `22146339`  
-- **Nguyễn Thái Khánh** – MSSV: `22146`  
+- **Nguyễn Thái Khánh** – MSSV: `22146332`  
 
 ---
 
 ## 📚 Mục lục
 
 - [Giới thiệu](#giới-thiệu)
-- [Thông số kỹ thuật](#thông-số-kỹ-thuật)
+- [Tính năng chính](#tính-năng-chính)
 - [Sơ đồ kết nối](#sơ-đồ-kết-nối)
 - [Hướng dẫn sử dụng](#hướng-dẫn-sử-dụng)
   - [Bật chế độ I2C](#bật-chế-độ-i2c)
@@ -27,16 +27,14 @@
 
 ## Giới thiệu
 
-Dự án này xây dựng driver cho cảm biến màu **TCS34725**, sử dụng giao tiếp I2C. Driver được thiết kế để chạy trên Raspberry Pi (hoặc các hệ thống Linux tương tự) dưới dạng kernel module.
-
+Dự án này xây dựng driver cho cảm biến áp suất **BMP180**. Driver được thiết kế để chạy trên Raspberry Pi 5.
 ---
 
-## Thông số kỹ thuật
-
-- Cảm biến màu TCS34725
+## Tính năng chính
+- Bao gồm chức năng đo nhiệt độ
+- Không chì (Pb-free), không halogen và tuân thủ tiêu chuẩn RoHS
 - Giao tiếp I2C
-- Điện áp hoạt động: 3.3V – 5V
-- Có tích hợp IR filter
+- Cấp độ nhạy ẩm MSL 1 (Moisture Sensitivity Level 1)
 
 ---
 
