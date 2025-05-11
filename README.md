@@ -39,7 +39,6 @@
 - Đa chức năng
 - Linh hoạt trong ứng dụng
 - Dễ dàng tích hợp giao tiếp
-- 
 ---
 ## Thông số kỹ thuật
 - Điện áp hoạt động: 1.8V đến 3.6V
@@ -58,7 +57,9 @@
 ---
 
 ## Hướng dẫn sử dụng
-
+- Bật chế độ I2C
+- Kiểm tra địa chỉ I2C của module
+- Cấu hình module
 ### Bật chế độ I2C
 
 ```bash
