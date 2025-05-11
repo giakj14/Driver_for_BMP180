@@ -58,15 +58,20 @@
 
 ## Hướng dẫn sử dụng
 ### Bật chế độ I2C
-- Kiểm tra địa chỉ I2C của module
-- Cấu hình module
+```bash
+sudo raspi-config
+# Vào Interfacing Options -> I2C -> Enable
+```
+### Kiểm tra địa chỉ I2C của module
+
+### Cấu hình module
 
 ---
 ## Khuyến nghị khi sử dụng cảm biến
 
-```bash
-sudo raspi-config
-# Vào Interfacing Options -> I2C -> Enable
+---
+## Tài liệu tham khảo
+
 
 
 
