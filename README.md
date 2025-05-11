@@ -12,7 +12,7 @@
 - [Giới thiệu](#giới-thiệu)
 - [Tính năng chính](#tính-năng-chính)
 - [Thông số kỹ thuật](#thông-số-kỹ-thuật)
-- [Sơ đồ kết nối](#sơ-đồ-kết-nối)
+- [Sơ đồ nối chân với Raspberry Pi 5](#sơ-đồ-nối-chân-với-Raspberry-Pi-5)
 - [Hướng dẫn sử dụng](#hướng-dẫn-sử-dụng)
   - [Bật chế độ I2C](#bật-chế-độ-i2c)
   - [Kiểm tra địa chỉ I2C của module](#kiểm-tra-địa-chỉ-i2c-của-module)
@@ -34,11 +34,12 @@
 ---
 
 ## Tính năng chính
-- Bao gồm chức năng đo nhiệt độ
-- Không chì (Pb-free), không halogen và tuân thủ tiêu chuẩn RoHS
-- Giao tiếp I2C
-- Cấp độ nhạy ẩm MSL 1 (Moisture Sensitivity Level 1)
-
+- Độ chính xác cao
+- Tiêu thụ điện năng thấp
+- Đa chức năng
+- Linh hoạt trong ứng dụng
+- Dễ dàng tích hợp giao tiếp
+- 
 ---
 ## Thông số kỹ thuật
 - Điện áp hoạt động: 1.8V đến 3.6V
@@ -47,8 +48,12 @@
 - Loại đầu ra: tín hiệu số
 - Nhiệt độ hoạt động: -40°C đến +85°C
 
-## Sơ đồ kết nối
-
+---
+## Sơ đồ nối chân với Raspberry Pi 5
+- VCC	    Pin 1 hoặc 17
+- GND	    Pin 6, 9, 14, 20, 25, 30, 34, 39
+- SDA	    GPIO2 / SDA1 (Pin 3)
+- SCL	    GPIO3 / SCL1 (Pin 5)
 
 ---
 
