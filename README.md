@@ -46,10 +46,10 @@
 
 ---
 ## Sơ đồ nối chân với Raspberry Pi 5
-- VCC     Pin 1 hoặc 17
-- GND	    Pin 6, 9, 14, 20, 25, 30, 34, 39
-- SDA	    GPIO2 / SDA1 (Pin 3)
-- SCL	    GPIO3 / SCL1 (Pin 5)
+- VCC:    Pin 1 hoặc 17 (3.3V)
+- GND:    Pin 6, 9, 14, 20, 25, 30, 34, 39
+- SDA:    GPIO2 / SDA1 (Pin 3)
+- SCL:    GPIO3 / SCL1 (Pin 5)
 
 ---
 ## Hướng dẫn sử dụng
@@ -120,9 +120,6 @@ sudo ./run
 sudo rmmod bmp180_driver
 make clean
 ```
-## Khuyến nghị khi sử dụng cảm biến
-
----
 ## Tính năng driver
 Để dùng các chức năng của driver khi người dùng code ở lớp user thì cần thêm thư viện sau:
 ```bash
