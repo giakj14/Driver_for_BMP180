@@ -18,7 +18,6 @@
   - [Cài đặt](#cài-đặt)
   - [Kiểm tra log kernel và chạy](#kiểm-tra-log-kernel-và-chạy)
   - [Gỡ cài đặt và dọn dẹp](#gỡ-cài-đặt-và-dọn-dẹp)
-- [Khuyến nghị khi sử dụng cảm biến](#khuyến-nghị-khi-sử-dụng-cảm-biến)
 - [Tính năng driver](#tính-năng-driver)
 - [Tài liệu tham khảo](#tài-liệu-tham-khảo)
 
