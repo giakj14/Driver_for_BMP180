@@ -68,8 +68,59 @@ Bước 1: Raspberry Pi 5
 ```bash
 cd /boot/firmware
 ```
+Bước 2: Tìm đến file có đầu là bcm2712 và đuôi là .dtb
+Bước 3: Chuyển đổi file bạn vừa kiểm ở trên từ .dtb sang .dts (ví dụ là Pi5-b, thay tên file bạn kiếm được, tùy loại Pi)
+```bash
+sudo dtc -I dtb -O dts -o bcm2712-rpi-5-b.dts bcm2712-rpi-5-b.dtb
+```
+Bước 4:
+Truy cập vào file .dts vừa tạo
+```bash
+sudo geany bcm2712-rpi-5-b.dts
+```
+Bước 5: Truy cập
+```bash
+i2c@74000
+```
+và nhập đoạn code:
+```bash
+bmp180@77{ 
+    compatible = "bosh, bmp180"; 
+    reg = <0x77>; 
+};
+```
+Bước 6: Chuyển đổi file bạn vừa kiểm ở trên từ .dts sang .dtb
+```bash
+sudo dtc -I dts -O dtb -o bcm2712-rpi-5-b.dtb bcm2712-rpi-5-b.dts
+```
 ---
+## Cài đặt
+Truy cập vào folder lưu các file driver:
+```bash
+make
+```
+sau đó:
+```bash
+sudo insmod bmp180_driver.ko
+```
+---
+## Kiểm tra log kernel và chạy ioctl
+Mở giao diện kernel:
+```bash
+dmesg - w
+gcc bmp180_ioctl -o run
+sudo ./run
+```
+---
+## Gỡ cài đặt và dọn dẹp file
+```bash
+sudo rmmod bmp180_driver
+make clean
+```
 ## Khuyến nghị khi sử dụng cảm biến
+
+---
+## Tính năng driver
 
 ---
 ## Tài liệu tham khảo
