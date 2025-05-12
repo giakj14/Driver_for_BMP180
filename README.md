@@ -108,6 +108,9 @@ sudo insmod bmp180_driver.ko
 Mở giao diện kernel:
 ```bash
 dmesg - w
+```
+và chạy ioctl:
+```bash
 gcc bmp180_ioctl -o run
 sudo ./run
 ```
@@ -121,10 +124,34 @@ make clean
 
 ---
 ## Tính năng driver
-
+Để dùng các chức năng của driver khi người dùng code ở lớp user thì cần thêm thư viện sau:
+```bash
+#include <sys/ioctl.h>
+```
+Tiếp theo, define các chức năng muốn dùng của driver như sau:
+- Đọc giá trị nhiệt độ chưa qua xử lý
+```bash
+#define BMP180_IOCTL_READ_raw_TEMP _IOR(BMP180_IOCTL_MAGIC, 1, int)
+```
+- Đọc giá trị áp suất chưa qua xử lý
+```bash
+#define BMP180_IOCTL_READ_raw_PRESS _IOR(BMP180_IOCTL_MAGIC, 2, int)
+```
+- Đọc giá trị nhiệt độ đã qua xử lý
+```bash
+#define BMP180_IOCTL_READ_real_TEMP _IOR(BMP180_IOCTL_MAGIC, 3, int)
+```
+- Đọc giá trị áp suất đã qua xử lý
+```bash
+#define BMP180_IOCTL_READ_real_PRESS _IOR(BMP180_IOCTL_MAGIC, 4, int)
+```
+- Ghi giá trị vào các thanh ghi
+```bash
+#define BMP180_IOCTL_INIT _IOW(BMP180_IOCTL_MAGIC, 5, struct bmp180_config)
+```
 ---
 ## Tài liệu tham khảo
-
+[Datasheet BMP180](chrome-extension://kdpelmjpfafjppnhbloffcjpeomlnpah/https://cdn-shop.adafruit.com/datasheets/BST-BMP180-DS000-09.pdf)
 
 
 
