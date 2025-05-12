@@ -151,7 +151,7 @@ Tiếp theo, define các chức năng muốn dùng của driver như sau:
 ```
 ---
 ## Tài liệu tham khảo
-[Datasheet BMP180](https://www.alldatasheet.com/datasheet-pdf/pdf/1132068/BOSCH/BMP180.html)
+[Datasheet BMP180](https://cdn-shop.adafruit.com/datasheets/BST-BMP180-DS000-09.pdf)
 
 
 
