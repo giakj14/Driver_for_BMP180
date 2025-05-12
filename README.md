@@ -28,7 +28,7 @@
 - Ngoài ra, cảm biến còn tích hợp một cảm biến nhiệt độ trên chip, cho phép hiệu chỉnh dữ liệu áp suất theo nhiệt độ nhằm tăng độ chính xác. Nguyên lý hoạt động cơ bản bao gồm: cảm biến piezo-resistive phát hiện thay đổi áp suất, dữ liệu áp suất dạng tương tự được chuyển đổi sang dạng số nhờ ADC, kết hợp với dữ liệu nhiệt độ để bù sai số và cải thiện độ chính xác.
 
 ---
-## Tính năng chính
+## Tính năng nổi bật
 - Độ chính xác cao
 - Tiêu thụ điện năng thấp
 - Đa chức năng
