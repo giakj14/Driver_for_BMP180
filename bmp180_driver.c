@@ -238,7 +238,6 @@ static struct file_operations fops = {
 static int bmp180_probe(struct i2c_client *client)
 {
     printk("UNLOCKED");
-    bmp180_read_calibration_data();
 
     bmp180_client = client;
 
