@@ -16,7 +16,7 @@
   - [Kiểm tra địa chỉ I2C của module](#kiểm-tra-địa-chỉ-i2c-của-module)
   - [Cấu hình module](#cấu-hình-module)
   - [Cài đặt](#cài-đặt)
-  - [Kiểm tra log kernel và chạy](#kiểm-tra-log-kernel-và-chạy)
+  - [Kiểm tra log kernel và chạy ioctl](#kiểm-tra-log-kernel-và-chạy-ioctl)
   - [Gỡ cài đặt và dọn dẹp](#gỡ-cài-đặt-và-dọn-dẹp)
 - [Tính năng driver](#tính-năng-driver)
 - [Tài liệu tham khảo](#tài-liệu-tham-khảo)
