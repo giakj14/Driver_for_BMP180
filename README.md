@@ -59,9 +59,15 @@ sudo raspi-config
 # Vào Interfacing Options -> I2C -> Enable
 ```
 ### Kiểm tra địa chỉ I2C của module
-
+```bash
+sudo i2cdetect -y 1
+```
+Nếu cắm BMP180 vào như phần cứng ở trên mà xuất hiện địa chỉ 0x77 thì kết nối thành công. Nếu địa chỉ hiển thị UU tại vị trí 0x77, lỗi này có thể bị chiếm bởi 1 driver khác.
 ### Cấu hình module
-
+Bước 1: Raspberry Pi 5
+```bash
+cd /boot/firmware
+```
 ---
 ## Khuyến nghị khi sử dụng cảm biến
 
