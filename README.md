@@ -8,7 +8,7 @@
 ---
 ## Mục lục
 - [Giới thiệu](#giới-thiệu)
-- [Tính năng chính](#tính-năng-chính)
+- [Tính năng nổi bật](#tính-năng-nổi-bật)
 - [Thông số kỹ thuật](#thông-số-kỹ-thuật)
 - [Sơ đồ nối chân với Raspberry Pi 5](#sơ-đồ-nối-chân-với-Raspberry-Pi-5)
 - [Hướng dẫn sử dụng](#hướng-dẫn-sử-dụng)
